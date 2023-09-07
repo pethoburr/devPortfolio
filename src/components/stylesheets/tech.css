@@ -1,0 +1,9 @@
+#techImg {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 3px;
+}
+
+.ballContainer {
+    display: flex;
+}
