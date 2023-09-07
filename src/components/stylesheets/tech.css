@@ -6,4 +6,5 @@
 
 .ballContainer {
     display: flex;
+    flex-wrap: wrap;
 }

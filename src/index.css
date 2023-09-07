@@ -13,8 +13,8 @@ code {
 }
 
 video {
-  height: 3rem;
-  width: 3rem;
+  height: 7rem;
+  width: 7rem;
 }
 
 @tailwind base;
