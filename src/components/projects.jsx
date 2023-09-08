@@ -112,9 +112,9 @@ const experiences = [
     return (
       <div className='pjContain'>
         <motion.div variants={textVariant()}>
-          <h2 className='pjhead'>
+          <h1>
             Projects
-          </h2>
+          </h1>
         </motion.div>
   
         <div className='mt-20 flex flex-col'>

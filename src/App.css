@@ -13,6 +13,10 @@
   height: 5.5rem;
 }
 
+h1 {
+  font-size: 7rem;
+}
+
 body {
   overflow-x: hidden !important;
   padding: 0;
@@ -30,9 +34,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
 }
 
 .nav-scroll {
@@ -120,8 +127,9 @@ li {
 }
 
 h1 {
+  text-align: center;
   color: white;
-  font-size: 3rem;
+  font-size: 5rem !important;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 900;
 }
@@ -186,6 +194,10 @@ a:link, a:visited {
 }
 
 @media (max-width: 768px) {
+
+  h1 {
+    font-size: 3rem !important;
+  }
   .navList li {
     display: none;
   }
@@ -228,7 +240,12 @@ a:link, a:visited {
     grid-column: 1 / -1;
     list-style: none;
     flex-direction: column;
-    transition: all 3.5s ease-in-out;
+    transition: all .5s ease-in-out;
+    height: 0;
+  }
+
+  .brgrNav:target {
+    height: 50px;
   }
 
   .typewriter {

@@ -80,10 +80,14 @@ const App = () => {
                sequence={[
                 'front end developer.',
                 1000,
+                'back end developer.',
+                1000,
+                'web developer.',
+                1000,
+                'Full stack developer.',
+                1000,
                 'technophile.',
                 1000,
-                'life long learner.',
-                1000
                ]}
                wrapper="span"
                speed={50}

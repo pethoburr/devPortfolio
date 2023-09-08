@@ -14,7 +14,7 @@ code {
 
 video {
   height: 15rem;
-  width: 15rem;
+  width: 100%;
 }
 
 @tailwind base;
