@@ -84,7 +84,7 @@ const App = () => {
                 1000,
                 'web developer.',
                 1000,
-                'Full stack developer.',
+                'full stack developer.',
                 1000,
                 'technophile.',
                 1000,
