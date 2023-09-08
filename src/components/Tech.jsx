@@ -41,10 +41,6 @@ const technologies = [
         icon: node
     },
     {
-        name: 'Github',
-        icon: github
-    },
-    {
         name: 'MongoDB',
         icon: mongo
     },

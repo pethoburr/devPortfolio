@@ -8,7 +8,6 @@ import About from './components/about';
 import './App.css';
 import StarsCanvas from './components/canvas/stars';
 
-
 const App = () => {
   const [navbar, setNavbar] = useState(false);
   const [show, setShow] = useState(true);

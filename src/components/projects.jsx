@@ -3,11 +3,11 @@ import 'react-vertical-timeline-component/style.min.css';
 import { motion } from 'framer-motion';
 import { textVariant } from '../utils/motion';
 import reacticon from '../assets/reactjs.png';
-import bike from '../assets/bike.mp4';
-import gang from '../assets/gang.mp4';
-import waldo from '../assets/waldo.mp4';
-import resume from '../assets/resume.mp4';
-import msgboard from '../assets/msgboard.mp4';
+import bike from '../assets/bikelifeapp.jpg';
+import gang from '../assets/memorygame.jpg';
+import waldo from '../assets/weresthewierdos.jpg';
+import resume from '../assets/resumeapp.jpg';
+import msgboard from '../assets/msgboard.jpg';
 
 const experiences = [
   {
@@ -101,7 +101,7 @@ const experiences = [
             </li>
           ))}
             <li>
-              <video src={experience.vid} controls muted></video>
+              <img src={experience.vid} alt={experience.title} />
               </li>
         </ul>
       </VerticalTimelineElement>
