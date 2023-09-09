@@ -149,12 +149,20 @@ h1 {
   display: none;
 }
 
-.material-symbols-outlined {
+.menuBtn {
   display: none;
-  color: white;
-  font-size: 3rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 2rem;
+  width: 2rem;
 }
 
+.line {
+  border-radius: 1rem;
+  background-color: white !important;
+  height: .25rem;
+}
 img {
   width: 1.5rem;
   height: 1.5rem;
@@ -166,7 +174,8 @@ img {
 }
 
 .scroll-to-top {
-  background-color: rgb(7, 35, 129) !important;
+  color: white !important;
+  background-color: rgb(235, 236, 239) !important;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -206,13 +215,6 @@ a:link, a:visited {
     padding-right: 0;
   }
 
-  .material-symbols-outlined {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    text-align: right;
-    padding-right: 1rem;
-    display: inline-block;
-  }
 
   .x {
     display: block;
@@ -246,5 +248,13 @@ a:link, a:visited {
 
   .typewriter {
     padding-left: 1rem;
+  }
+
+  .menuBtn {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1.5rem;
   }
 }

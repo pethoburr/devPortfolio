@@ -28,7 +28,7 @@ const App = () => {
     }
   }
 
-  const brgr = <span className="material-symbols-outlined" onClick={showMenu}>menu</span>
+  const brgr = <div className='menuBtn' onClick={showMenu} ><div className='line'></div><div className='line'></div><div className='line'></div></div>;
   const x = <div className='x' onClick={showMenu}>X</div>;
 
   const scrollToSection = (elementRef) => {
@@ -58,9 +58,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <ScrollToTop smooth  component={<span id="arrow" className="material-symbols-outlined">
-            keyboard_double_arrow_up
-            </span>} />
+      <ScrollToTop smooth />
       <div id='main'>
           <div id='main' >
           <nav className={navbar ? 'nav-scroll' : 'nav'}>
