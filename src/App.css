@@ -8,9 +8,10 @@
 @tailwind utilities;
 
 .logo {
-  border-radius: 10rem;
-  width: 8rem;
-  height: 5.5rem;
+  width: 9rem;
+  height: 6rem;
+  padding: 1rem;
+  filter: brightness(0) invert(1);
 }
 
 h1 {
