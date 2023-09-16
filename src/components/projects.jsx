@@ -8,8 +8,22 @@ import gang from '../assets/memorygame.jpg';
 import waldo from '../assets/weresthewierdos.jpg';
 import resume from '../assets/resumeapp.jpg';
 import msgboard from '../assets/msgboard.jpg';
+import inventory from '../assets/inventory.jpg';
 
 const experiences = [
+  {
+    title: "Super Sport Shop",
+    icon: reacticon,
+    iconBg: "#E6DEDD",
+    live: "https://young-feather-4191.fly.dev/",
+    code: "https://github.com/pethoburr/inventory-app",
+    points: [
+      "Full stack inventory application developed with NodeJs, ExpressJS, MongoDB, Mongoose, PUG",
+      "Developed with MVC software design pattern and all CRUD operations",
+      "Deployed and hosted on fly.io"
+    ],
+    vid: inventory
+  },
   {
     title: "Mini message board",
     icon: reacticon,
