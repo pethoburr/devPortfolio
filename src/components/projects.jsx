@@ -9,8 +9,25 @@ import waldo from '../assets/weresthewierdos.jpg';
 import resume from '../assets/resumeapp.jpg';
 import msgboard from '../assets/msgboard.jpg';
 import inventory from '../assets/inventory.jpg';
+import club from '../assets/club1000.jpg';
 
 const experiences = [
+  {
+    title: "Club 1000",
+    icon: reacticon,
+    iconBg: "#E6DEDD",
+    live: "https://young-feather-4191.fly.dev/",
+    code: "https://github.com/pethoburr/inventory-app",
+    points: [
+      "Members only message board application developed with NodeJs, ExpressJS, MongoDB, Mongoose, PassportJs, EJS",
+      "Implemented user sign up and login with PassportJs",
+      "Each posts sender and time sent details are hidden unless user has joined club",
+      "Added a membership option where users must answer a question correctly to gain club membership and be authorized to see posts author username and time posted",
+      "Created admin user (username: petho, password: burr) who has the ability to delete anyones message",
+      "Deployed and hosted on fly.io"
+    ],
+    vid: club
+  },
   {
     title: "Super Sport Shop",
     icon: reacticon,
@@ -18,7 +35,7 @@ const experiences = [
     live: "https://young-feather-4191.fly.dev/",
     code: "https://github.com/pethoburr/inventory-app",
     points: [
-      "Full stack inventory application developed with NodeJs, ExpressJS, MongoDB, Mongoose, PUG",
+      "Inventory application developed with NodeJs, ExpressJS, MongoDB, Mongoose, PUG",
       "Developed with MVC software design pattern and all CRUD operations",
       "Deployed and hosted on fly.io"
     ],
