@@ -16,8 +16,8 @@ const experiences = [
     title: "Club 1000",
     icon: reacticon,
     iconBg: "#E6DEDD",
-    live: "https://young-feather-4191.fly.dev/",
-    code: "https://github.com/pethoburr/inventory-app",
+    live: "https://green-fire-8194.fly.dev/members",
+    code: "https://github.com/pethoburr/members-only",
     points: [
       "Members only message board application developed with NodeJs, ExpressJS, MongoDB, Mongoose, PassportJs, EJS",
       "Implemented user sign up and login with PassportJs",
