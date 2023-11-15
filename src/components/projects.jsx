@@ -10,8 +10,23 @@ import resume from '../assets/resumeapp.jpg';
 import msgboard from '../assets/msgboard.jpg';
 import inventory from '../assets/inventory.jpg';
 import club from '../assets/club1000.jpg';
+import apex from '../assets/apex.png'
 
 const experiences = [
+  {
+    title: "Apex Predators",
+    icon: reacticon,
+    iconBG: "#E6DEDD",
+    live: "https://apex-predators.netlify.app",
+    code: "https://github.com/pethoburr/blog-server-api",
+    points: [
+      "Developed a fullstack blog website creating and using REST API",
+      "Backend developed with NodeJS, ExpressJS, MongoDB",
+      "Frontend developed with HTML/CSS, JavaScript, React, Material UI, Bootstrap",
+      "Backend hosted on fly.io and frontend hosted with netlify"
+    ],
+    vid: apex
+  },
   {
     title: "Club 1000",
     icon: reacticon,
