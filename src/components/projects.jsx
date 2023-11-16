@@ -25,6 +25,7 @@ const experiences = [
       "Frontend developed with HTML/CSS, JavaScript, React, Material UI, Bootstrap",
       "Created second website for admin users to Create, Read, Update and Delete posts as well as topics",
       "Admin user has ability to view all posts including unpublished ones as well as the ability to publish and unpublish any post",
+      "Test admin account: frigger, password: trigger",
       "Admin live: https://blog-client-admin.netlify.app",
       "Admin code: https://github.com/pethoburr/blog-admin",
       "Backend hosted on fly.io and frontend hosted with netlify"
