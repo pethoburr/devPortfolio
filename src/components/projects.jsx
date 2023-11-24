@@ -85,7 +85,7 @@ const experiences = [
       vid: bike
     },
     {
-      title: "Where's the weridos?",
+      title: "Where's the weirdos?",
       iconBg: "#E6DEDD",
       live: "https://pethoburr.github.io/photo-tagging/",
       code: "https://github.com/pethoburr/photo-tagging/",
@@ -108,17 +108,17 @@ const experiences = [
       ],
       vid: resume
     },
-    {
-      title: "Memory Game",
-      icon: reacticon,
-      iconBg: "#E6DEDD",
-      live: "https://pethoburr.github.io/memory-game/",
-      code: "https://github.com/pethoburr/memory-game/",
-      points: [
-        "Developed a memory game in which player attempts to select each individual card without selecting it twice. Max score is 12. Player high score is updated upon each beat"
-      ],
-      vid: gang
-    },
+    // {
+    //   title: "Memory Game",
+    //   icon: reacticon,
+    //   iconBg: "#E6DEDD",
+    //   live: "https://pethoburr.github.io/memory-game/",
+    //   code: "https://github.com/pethoburr/memory-game/",
+    //   points: [
+    //     "Developed a memory game in which player attempts to select each individual card without selecting it twice. Max score is 12. Player high score is updated upon each beat"
+    //   ],
+    //   vid: gang
+    // },
   ];
   
   const ExperienceCard = ({ experience }) => {
