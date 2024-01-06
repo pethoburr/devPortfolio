@@ -33,10 +33,6 @@ const technologies = [
         icon: git
     },
     {
-        name: 'Three JS',
-        icon: threejs
-    },
-    {
         name: 'Node',
         icon: node
     },

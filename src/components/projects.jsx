@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { textVariant } from '../utils/motion';
 import reacticon from '../assets/reactjs.png';
 import bike from '../assets/bikelifeapp.jpg';
-import gang from '../assets/memorygame.jpg';
 import waldo from '../assets/weresthewierdos.jpg';
 import resume from '../assets/resumeapp.jpg';
 import msgboard from '../assets/msgboard.jpg';
@@ -20,11 +19,12 @@ const experiences = [
     live: "https://apex-predators.netlify.app",
     code: "https://github.com/pethoburr/blog-server-api",
     points: [
-      "Developed a fullstack blog website creating and using REST API",
+      "Fullstack blog website authoring and consuming RESTful API",
       "Backend developed with NodeJS, ExpressJS, MongoDB",
       "Frontend developed with HTML/CSS, JavaScript, React, Material UI, Bootstrap",
-      "Created second website for admin users to Create, Read, Update and Delete posts as well as topics",
+      "Created second website for admin users to Create, Read, Update and Delete posts as well as topics following blog site best practices to separate admin and user sites",
       "Admin user has ability to view all posts including unpublished ones as well as the ability to publish and unpublish any post",
+      "Admin user also has ability to delete any comment",
       "Test admin account: frigger, password: trigger",
       "Admin live: https://blog-client-admin.netlify.app",
       "Admin code: https://github.com/pethoburr/blog-admin",
@@ -40,9 +40,9 @@ const experiences = [
     code: "https://github.com/pethoburr/members-only",
     points: [
       "Members only message board application developed with NodeJs, ExpressJS, MongoDB, Mongoose, PassportJs, EJS",
-      "Implemented user sign up and login with PassportJs",
-      "Each posts sender and time sent details are hidden unless user has joined club",
-      "Added a membership option where users must answer a question correctly to gain club membership and be authorized to see posts author username and time posted",
+      "Implemented user authentication with PassportJs",
+      "Each posts author and timestamp details are hidden unless user has joined club",
+      "Added a membership option where users must answer a question correctly to gain club membership and be authorized to see posts author, username and time posted",
       "Created admin user (username: petho, password: burr) who has the ability to delete anyones message",
       "Deployed and hosted on fly.io"
     ],
@@ -107,18 +107,7 @@ const experiences = [
         "Built with full mobile responsivness using React and implemented form best practices"
       ],
       vid: resume
-    },
-    // {
-    //   title: "Memory Game",
-    //   icon: reacticon,
-    //   iconBg: "#E6DEDD",
-    //   live: "https://pethoburr.github.io/memory-game/",
-    //   code: "https://github.com/pethoburr/memory-game/",
-    //   points: [
-    //     "Developed a memory game in which player attempts to select each individual card without selecting it twice. Max score is 12. Player high score is updated upon each beat"
-    //   ],
-    //   vid: gang
-    // },
+    }
   ];
   
   const ExperienceCard = ({ experience }) => {
