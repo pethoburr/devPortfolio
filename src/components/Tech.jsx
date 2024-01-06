@@ -4,12 +4,9 @@ import html from '../assets/html.png';
 import css from '../assets/css.png';
 import git from '../assets/git.png';
 import reactjs from '../assets/reactjs.png';
-import threejs from '../assets/threejs.svg';
 import node from '../assets/nodejs.png';
 import mongo from '../assets/mongodb.png';
 import tailwind from '../assets/tailwind.png';
-import github from '../assets/github.png';
-
 
 const technologies = [
     {
