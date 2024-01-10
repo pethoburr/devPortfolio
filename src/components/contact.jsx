@@ -7,6 +7,9 @@ import { StarWrapper } from '../hoc/sectionwrapper';
 
 const Contact = () => {
   const formRef = useRef();
+  const [nameErr, setNameErr] = useState(false)
+  const [emailErr, setEmailErr] = useState(false)
+  const [msgErr, setMsgErr] = useState(false)
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -27,8 +30,25 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (form.name === "") {
+      setNameErr(true)
+      return
+    } else {
+      setNameErr(false)
+    }
+    if (form.email === "") {
+      setEmailErr(true)
+      return
+    } else {
+      setEmailErr(false)
+    }
+    if (form.message === "") {
+      setMsgErr(true)
+      return
+    } else {
+      setMsgErr(false)
+    }
     setLoading(true);
-
     emailjs
       .send(
         'service_amw24i8',
@@ -87,6 +107,7 @@ const Contact = () => {
               placeholder="What's your name?"
               className='bg-sky-800 py-4 px-6 placeholder:text-cyan-300 text-white rounded-lg outline-none border-none font-medium'
             />
+            { nameErr && <p className="failure">Must enter name</p>}
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
@@ -98,6 +119,7 @@ const Contact = () => {
               placeholder="What's your email?"
               className='bg-sky-800 py-4 px-6 placeholder:text-cyan-300 text-white rounded-lg outline-none border-none font-medium'
             />
+            { emailErr && <p className="failure">Must enter email</p>}
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
@@ -109,6 +131,7 @@ const Contact = () => {
               placeholder='What you want to say?'
               className='bg-sky-800 py-4 px-6 placeholder:text-cyan-300 text-white rounded-lg outline-none border-none font-medium'
             />
+            { msgErr && <p className="failure">Must enter message</p>}
           </label>
 
           <button
