@@ -23,7 +23,7 @@ const experiences = [
       "Backend developed with NodeJS, ExpressJS, MongoDB",
       "Frontend developed with HTML/CSS, JavaScript, React, Material UI, Bootstrap",
       "Created second website for admin users to Create, Read, Update and Delete posts as well as topics following blog site best practices to separate admin and user sites",
-      "Admin user has ability to view all posts including unpublished ones as well as the ability to publish and unpublish any post",
+      "Admin user can view, publish and unpublish any post, including ones stored in the database that have not yet been published on blog",
       "Admin user also has ability to delete any comment",
       "Test admin account: frigger, password: trigger",
       "Admin live: https://blog-client-admin.netlify.app",
