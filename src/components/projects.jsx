@@ -21,7 +21,7 @@ const experiences = [
     points: [
       "Blog website authoring and consuming RESTful API",
       "Backend: NodeJS, ExpressJS, MongoDB",
-      "Frontend: HTML/CSS, JavaScript, React, Material UI, Bootstrap",
+      "Frontend: HTML, CSS, JavaScript, React, Material UI, Bootstrap",
       "Second website for admin users to Create, Read, Update and Delete posts as well as topics following blog site best practices to separate admin and user sites",
       "Admin user can view, publish and unpublish any post, including ones stored in the database that have not yet been published on blog",
       "Admin user also has ability to delete any comment",
@@ -59,7 +59,7 @@ const experiences = [
     points: [
       "Inventory application to manage motorcycle's stock",
       "Backend: NodeJs, ExpressJS, MongoDB",
-      "Frontend: HTML,, CSS, PUG",
+      "Frontend: HTML, CSS, PUG",
       "Developed with MVC software design pattern and all CRUD operations",
       "Deployed and hosted on fly.io"
     ],
