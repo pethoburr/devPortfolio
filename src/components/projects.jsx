@@ -74,7 +74,7 @@ const experiences = [
     points: [
       "Backend: NodeJS, ExpressJS, MongoDB",
       "Frontend: HTML, CSS, PUG",
-      "Deployed and hosted with fly.io"
+      "Deployed and hosted with fly.io PaaS"
     ],
     vid: msgboard
   },
