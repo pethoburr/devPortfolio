@@ -19,10 +19,10 @@ const experiences = [
     live: "https://apex-predators.netlify.app",
     code: "https://github.com/pethoburr/blog-server-api",
     points: [
-      "Fullstack blog website authoring and consuming RESTful API",
-      "Backend developed with NodeJS, ExpressJS, MongoDB",
-      "Frontend developed with HTML/CSS, JavaScript, React, Material UI, Bootstrap",
-      "Created second website for admin users to Create, Read, Update and Delete posts as well as topics following blog site best practices to separate admin and user sites",
+      "Blog website authoring and consuming RESTful API",
+      "Backend: NodeJS, ExpressJS, MongoDB",
+      "Frontend: HTML/CSS, JavaScript, React, Material UI, Bootstrap",
+      "Second website for admin users to Create, Read, Update and Delete posts as well as topics following blog site best practices to separate admin and user sites",
       "Admin user can view, publish and unpublish any post, including ones stored in the database that have not yet been published on blog",
       "Admin user also has ability to delete any comment",
       "Test admin account: frigger, password: trigger",
@@ -39,7 +39,9 @@ const experiences = [
     live: "https://green-fire-8194.fly.dev/members",
     code: "https://github.com/pethoburr/members-only",
     points: [
-      "Members only message board application developed with NodeJs, ExpressJS, MongoDB, Mongoose, PassportJs, EJS",
+      "Members only message board application",
+      "Backend: NodeJs, ExpressJS, MongoDB",
+      "Frontend: HTML, CSS, EJS",
       "Implemented user authentication with PassportJs",
       "Each posts author and timestamp details are hidden unless user has joined club",
       "Added a membership option where users must answer a question correctly to gain club membership and be authorized to see posts author, username and time posted",
@@ -55,7 +57,9 @@ const experiences = [
     live: "https://young-feather-4191.fly.dev/",
     code: "https://github.com/pethoburr/inventory-app",
     points: [
-      "Inventory application developed with NodeJs, ExpressJS, MongoDB, Mongoose, PUG",
+      "Inventory application to manage motorcycle's stock",
+      "Backend: NodeJs, ExpressJS, MongoDB",
+      "Frontend: HTML,, CSS, PUG",
       "Developed with MVC software design pattern and all CRUD operations",
       "Deployed and hosted on fly.io"
     ],
@@ -68,7 +72,8 @@ const experiences = [
     live: "https://weathered-dream-325.fly.dev/",
     code: "https://github.com/pethoburr/mini-message-board",
     points: [
-      "Developed a mini message board app created using NodeJS, ExpressJS, MongoDB, Mongoose, PUG",
+      "Backend: NodeJS, ExpressJS, MongoDB",
+      "Frontend: HTML, CSS, PUG",
       "Deployed and hosted with fly.io"
     ],
     vid: msgboard
@@ -90,9 +95,11 @@ const experiences = [
       live: "https://pethoburr.github.io/photo-tagging/",
       code: "https://github.com/pethoburr/photo-tagging/",
       points: [
+        "Backend: Firebase",
+        "Frontend: HTML, CSS, JavaScript, React, Bootstrap",
         "Developed a Where's Waldo style game involving 3 characters to find with a timer to track your score",
         "Included option to sign in with google account and use google username for updating score to leaderboard or manually entering custom name",
-        "Implemented global leaderboards using Firebase backend",
+        "Global leaderboards for scorekeeping",
       ],
       vid: waldo
     },
