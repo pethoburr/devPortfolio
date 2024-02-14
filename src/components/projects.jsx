@@ -20,16 +20,16 @@ const experiences = [
     code: "https://github.com/pethoburr/blog-server-api",
     points: [
       "Blog website authoring and consuming RESTful API",
-      "Backend: NodeJS, ExpressJS, MongoDB",
-      "Frontend: HTML, CSS, JavaScript, React, Material UI, Bootstrap",
       "Second website for admin users to Create, Read, Update and Delete posts as well as topics following blog site best practices to separate admin and user sites",
       "Admin user can view, publish and unpublish any post, including ones stored in the database that have not yet been published on blog",
       "Admin user also has ability to delete any comment",
       "Test admin account: frigger, password: trigger",
-      "Admin live: https://blog-client-admin.netlify.app",
-      "Admin code: https://github.com/pethoburr/blog-admin",
-      "Backend hosted on fly.io and frontend hosted with netlify"
+      "Backend hosted on fly.io and frontend hosted with netlify",
+      "Backend: NodeJS, ExpressJS, MongoDB",
+      "Frontend: HTML, CSS, JavaScript, React, Material UI, Bootstrap",
     ],
+    app: 'https://blog-client-admin.netlify.app',
+    repo: 'https://github.com/pethoburr/blog-admin',
     vid: apex
   },
   {
@@ -40,13 +40,13 @@ const experiences = [
     code: "https://github.com/pethoburr/members-only",
     points: [
       "Members only message board application",
-      "Backend: NodeJs, ExpressJS, MongoDB",
-      "Frontend: HTML, CSS, EJS",
       "Implemented user authentication with PassportJs",
       "Each posts author and timestamp details are hidden unless user has joined club",
       "Added a membership option where users must answer a question correctly to gain club membership and be authorized to see posts author, username and time posted",
       "Created admin user (username: petho, password: burr) who has the ability to delete anyones message",
-      "Deployed and hosted on fly.io"
+      "Deployed and hosted on fly.io",
+      "Backend: NodeJs, ExpressJS, MongoDB",
+      "Frontend: HTML, CSS, EJS",
     ],
     vid: club
   },
@@ -58,10 +58,10 @@ const experiences = [
     code: "https://github.com/pethoburr/inventory-app",
     points: [
       "Inventory application to manage motorcycle's stock",
+      "Developed with MVC software design pattern and all CRUD operations",
+      "Deployed and hosted on fly.io",
       "Backend: NodeJs, ExpressJS, MongoDB",
       "Frontend: HTML, CSS, PUG",
-      "Developed with MVC software design pattern and all CRUD operations",
-      "Deployed and hosted on fly.io"
     ],
     vid: inventory
   },
@@ -72,9 +72,9 @@ const experiences = [
     live: "https://weathered-dream-325.fly.dev/",
     code: "https://github.com/pethoburr/mini-message-board",
     points: [
+      "Deployed and hosted with fly.io PaaS",
       "Backend: NodeJS, ExpressJS, MongoDB",
       "Frontend: HTML, CSS, PUG",
-      "Deployed and hosted with fly.io PaaS"
     ],
     vid: msgboard
   },
@@ -85,7 +85,9 @@ const experiences = [
       code: "https://github.com/pethoburr/shopping-cart",
       points: [
         "Developed a mock shopping website using React, React Router, functional components and hooks",
-        "Included mobile responsivness, WCAG guidelines, semantic HTML"
+        "Included mobile responsivness, WCAG guidelines, semantic HTML",
+        "Deployment and CI/CD with Github Actions",
+        "Frontend: HTML, CSS, JavaScript, React"
       ],
       vid: bike
     },
@@ -95,11 +97,11 @@ const experiences = [
       live: "https://pethoburr.github.io/photo-tagging/",
       code: "https://github.com/pethoburr/photo-tagging/",
       points: [
-        "Backend: Firebase",
-        "Frontend: HTML, CSS, JavaScript, React, Bootstrap",
         "Developed a Where's Waldo style game involving 3 characters to find with a timer to track your score",
         "Included option to sign in with google account and use google username for updating score to leaderboard or manually entering custom name",
         "Global leaderboards for scorekeeping",
+        "Backend: Firebase",
+        "Frontend: HTML, CSS, JavaScript, React, Bootstrap",
       ],
       vid: waldo
     },
@@ -147,6 +149,8 @@ const experiences = [
               {point}
             </li>
           ))}
+          {experience.app && <li><a href={experience.app} target="_blank">Admin live</a></li>}
+          {experience.repo && <li><a href={experience.repo} target="_blank">Admin code</a></li>}
             <li>
               <img src={experience.vid} alt={experience.title} />
               </li>
