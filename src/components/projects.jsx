@@ -9,7 +9,41 @@ import resume from '../assets/resumeapp.jpg';
 import msgboard from '../assets/msgboard.jpg';
 import inventory from '../assets/inventory.jpg';
 import club from '../assets/club1000.jpg';
-import apex from '../assets/apex.png'
+import apex from '../assets/apex.png';
+import apexbottom from '../assets/apexbottom.png';
+// import rbm from '../assets/resumebuildermobile.png';
+// import focused from '../assets/resumebuildermobilefocused.png';
+import preview from '../assets/resumebuilderpreview.png';
+// import weirdomobile from '../assets/weirdomobile.png';
+import apexSignUp from '../assets/apexsignup.png';
+// import bsMobileFeat from '../assets/bikeshopmobilefeatured.png';
+import weirdBoard from '../assets/weirdoleaderboard.png';
+import bsCart from '../assets/bikeshopcart.png';
+import gAuth from '../assets/weirdogoogleauth.png';
+import bsList from '../assets/bikeshoplist.png';
+// import mobileMsg from '../assets/mmmobilemessage.png';
+import bsAbout from '../assets/bikeshopabout.png';
+import weirdoFinder from '../assets/weirdofinder.png';
+// import mobileHome from '../assets/mmmobilehome.png';
+import sssList from '../assets/sssmobilemakelist.png';
+// import clubMobileHome from '../assets/club1000mobilehome.png';
+// import sssmobileHome from '../assets/sssmobilehome.png';
+import sssmakeList from '../assets/sssmakelist.png';
+// import clubSignUp from '../assets/club1000mobilesignup.png';
+// import apexmobileLatest from '../assets/apexmobilelatest.png';
+// import apexmobileMenu from '../assets/apexmobilemenu.png';
+import clubHome from '../assets/club1000home.png';
+import apexLatest from '../assets/apexlatest.png';
+import msgBoardMsg from '../assets/msgboardmsg.png';
+import Carousel from './Carousel';
+
+const apexPics = [apex, apexSignUp, apexLatest, apexbottom];
+const clubPics = [club, clubHome];
+const sssPics = [inventory, sssmakeList];
+const msgrPics = [msgboard, msgBoardMsg];
+const bsPics = [bike, bsAbout, bsList, bsCart];
+const weirdPics = [waldo, weirdoFinder, gAuth, weirdBoard];
+const rbPics = [resume, preview];
 
 const experiences = [
   {
@@ -20,17 +54,17 @@ const experiences = [
     code: "https://github.com/pethoburr/blog-server-api",
     points: [
       "Blog website authoring and consuming RESTful API",
-      "Second website for admin users to Create, Read, Update and Delete posts as well as topics following blog site best practices to separate admin and user sites",
-      "Admin user can view, publish and unpublish any post, including ones stored in the database that have not yet been published on blog",
-      "Admin user also has ability to delete any comment",
-      "Test admin account: frigger, password: trigger",
-      "Backend hosted on fly.io and frontend hosted with netlify",
+      "Second website for admin users to perform CRUD operations on posts and topics following blog site best practices",
+      "Admin can view, publish and unpublish any post, including ones stored in the database that have not yet been published",
+      "Admin has ability to delete any comment",
+      "Test account username: frigger, password: trigger",
+      "Backend deployed on fly.io and frontend deployed on netlify",
       "Backend: NodeJS, ExpressJS, MongoDB",
       "Frontend: HTML, CSS, JavaScript, React, Material UI, Bootstrap",
     ],
     app: 'https://blog-client-admin.netlify.app',
     repo: 'https://github.com/pethoburr/blog-admin',
-    vid: apex
+    vid: apexPics
   },
   {
     title: "Club 1000",
@@ -48,7 +82,7 @@ const experiences = [
       "Backend: NodeJs, ExpressJS, MongoDB",
       "Frontend: HTML, CSS, EJS",
     ],
-    vid: club
+    vid: clubPics
   },
   {
     title: "Super Sport Shop",
@@ -63,7 +97,7 @@ const experiences = [
       "Backend: NodeJs, ExpressJS, MongoDB",
       "Frontend: HTML, CSS, PUG",
     ],
-    vid: inventory
+    vid: sssPics
   },
   {
     title: "Mini message board",
@@ -76,7 +110,7 @@ const experiences = [
       "Backend: NodeJS, ExpressJS, MongoDB",
       "Frontend: HTML, CSS, PUG",
     ],
-    vid: msgboard
+    vid: msgrPics
   },
     {
       title: "Shopping Cart",
@@ -89,7 +123,7 @@ const experiences = [
         "Deployment and CI/CD with Github Actions",
         "Frontend: HTML, CSS, JavaScript, React"
       ],
-      vid: bike
+      vid: bsPics
     },
     {
       title: "Where's the weirdos?",
@@ -100,10 +134,10 @@ const experiences = [
         "Developed a Where's Waldo style game involving 3 characters to find with a timer to track your score",
         "Included option to sign in with google account and use google username for updating score to leaderboard or manually entering custom name",
         "Global leaderboards for scorekeeping",
-        "Backend: Firebase",
+        "Backend: Google's Cloud PaaS Firebase",
         "Frontend: HTML, CSS, JavaScript, React, Bootstrap",
       ],
-      vid: waldo
+      vid: weirdPics
     },
     {
       title: "Resume Builder",
@@ -113,9 +147,10 @@ const experiences = [
       iconBg: "#383E56",
       points: [
         "Developed a Resume builder app in which you can enter your details into a form and on submit it will render a Resume preview",
-        "Built with full mobile responsivness using React and implemented form best practices"
+        "Built with full mobile responsivness using React and implemented form best practices",
+        "Frontend: HTML, CSS, JavaScript, React, Font Awesome"
       ],
-      vid: resume
+      vid: rbPics
     }
   ];
   
@@ -152,7 +187,9 @@ const experiences = [
           {experience.app && <li><a href={experience.app} target="_blank">Admin live</a></li>}
           {experience.repo && <li><a href={experience.repo} target="_blank">Admin code</a></li>}
             <li>
-              <img src={experience.vid} alt={experience.title} />
+              {console.log('arr passed to carousel:' + experience.vid)}
+              <Carousel arr={experience.vid} />
+              {/* <img src={experience.vid} alt={experience.title} /> */}
               </li>
         </ul>
       </VerticalTimelineElement>
