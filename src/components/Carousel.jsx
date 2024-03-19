@@ -31,7 +31,7 @@ const Carousel = ({ arr }) => {
                     <img src={imageUrl} className='carouselPic' style={{ width: '100%' }} alt='project picture' />
                 </div>
             ))}
-            <a className='prev' onClick={() => plusSlides(-1)}>&#10094;</a>
+            <a className='prev' onClick={() => plusSlides(1)}>&#10094;</a>
             <a className='next' onClick={() => plusSlides(-1)}>&#10095;</a>
         </div>
     )
